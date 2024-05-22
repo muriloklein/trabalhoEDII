@@ -46,6 +46,21 @@ HuffmanNode* buildHuffmanTree(const map<wchar_t, int> &frequencies) {
     return pq.top();
 }
 
+void generateCodes(HuffmanNode *root, const std::wstring &str, std::map<wchar_t, std::wstring> &codes) {
+    if (!root) return;
+    if (!root->left && !root->right) {
+        codes[root->symbol] = str;
+    }
+    generateCodes(root->left, str + L"0", codes);
+    generateCodes(root->right, str + L"1", codes);
+}
+
+void displayCodes(const std::map<wchar_t, std::wstring> &codes) {
+    for (auto pair : codes) {
+        std::wcout << pair.first << L": " << pair.second << std::endl;
+    }
+}
+
 int main() {
     wstring filename = "input.txt";
     map<wchar_t, int> frequencies = analyzeFile(filename);
