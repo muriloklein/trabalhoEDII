@@ -1,7 +1,8 @@
-#Trabalho final de Estrutura de Dados II.
+# Trabalho final de Estrutura de Dados II.
 
-###Componentes:
-  - Murilo Kaemmerer Klein
-  - Matheus Costa Curta
+### Componentes:
 
-#Codificação de Huffman
+- Murilo Kaemmerer Klein
+- Matheus Costa Curta
+
+# Codificação de Huffman
