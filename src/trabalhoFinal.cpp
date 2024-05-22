@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <map>
+#include <queue>
 
 using namespace std;
 
@@ -28,6 +29,22 @@ struct compare {
         return (l->frequency > r->frequency);
     }
 };
+
+HuffmanNode* buildHuffmanTree(const map<wchar_t, int> &frequencies) {
+    priority_queue<HuffmanNode*, vector<HuffmanNode*>, compare> pq;
+    for (auto pair : frequencies) {
+        pq.push(new HuffmanNode(pair.first, pair.second));
+    }
+    while (pq.size() > 1) {
+        HuffmanNode *left = pq.top(); pq.pop();
+        HuffmanNode *right = pq.top(); pq.pop();
+        HuffmanNode *node = new HuffmanNode(L'\0', left->frequency + right->frequency);
+        node->left = left;
+        node->right = right;
+        pq.push(node);
+    }
+    return pq.top();
+}
 
 int main() {
     wstring filename = "input.txt";
