@@ -61,6 +61,18 @@ void displayCodes(const std::map<wchar_t, std::wstring> &codes) {
     }
 }
 
+void displayFileSizeComparison(const std::map<wchar_t, int> &frequencies, const std::map<wchar_t, std::wstring> &codes) {
+    int originalSize = 0;
+    int compressedSize = 0;
+    for (auto pair : frequencies) {
+        originalSize += pair.second * sizeof(wchar_t) * 8; // em bits
+        compressedSize += pair.second * codes.at(pair.first).length();
+    }
+    std::wcout << L"Original Size: " << originalSize << L" bits" << std::endl;
+    std::wcout << L"Compressed Size: " << compressedSize << L" bits" << std::endl;
+    std::wcout << L"Compression Ratio: " << 100.0 * (originalSize - compressedSize) / originalSize << L"%" << std::endl;
+}
+
 int main() {
     wstring filename = "input.txt";
     map<wchar_t, int> frequencies = analyzeFile(filename);
