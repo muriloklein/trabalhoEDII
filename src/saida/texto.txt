@@ -1,0 +1,33 @@
+
+Comparacao dos tamanhos dos arquivos:
+Tamanho original do arquivo: 31685000 bits
+Tamanho comprimido do arquivo: 15165065 bits
+Diferenca: 52.138%
+
+Codigos de Huffman e Frequencias dos Caracteres:
+
+: Codigo: 1001011, Frequencia: 32536
+ : Codigo: 00, Frequencia: 700260
+a: Codigo: 1111, Frequencia: 349421
+b: Codigo: 1001001, Frequencia: 30173
+c: Codigo: 110100, Frequencia: 76604
+d: Codigo: 11011, Frequencia: 153718
+e: Codigo: 011, Frequencia: 407588
+f: Codigo: 1001010, Frequencia: 32408
+g: Codigo: 1001000, Frequencia: 27125
+h: Codigo: 010100, Frequencia: 46151
+i: Codigo: 0100, Frequencia: 162757
+j: Codigo: 10111100, Frequencia: 14890
+l: Codigo: 110101, Frequencia: 76815
+m: Codigo: 10101, Frequencia: 133496
+n: Codigo: 10100, Frequencia: 132967
+o: Codigo: 1110, Frequencia: 333183
+p: Codigo: 101110, Frequencia: 70200
+q: Codigo: 1011111, Frequencia: 38334
+r: Codigo: 1000, Frequencia: 198881
+s: Codigo: 1100, Frequencia: 284436
+t: Codigo: 10011, Frequencia: 127353
+u: Codigo: 10110, Frequencia: 136453
+v: Codigo: 010101, Frequencia: 46816
+x: Codigo: 101111010, Frequencia: 4182
+z: Codigo: 101111011, Frequencia: 14717
