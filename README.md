@@ -42,5 +42,3 @@ As funções `displayCodes` e `displayFileSizeComparison` exibem os códigos de 
 1. Compile o código utilizando um compilador C++ compatível com o padrão C++11 ou superior.
 2. Execute o programa fornecendo o nome do arquivo de texto a ser analisado.
 3. O programa exibirá as frequências dos caracteres, os códigos de Huffman gerados e a comparação do tamanho dos arquivos.
-
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
